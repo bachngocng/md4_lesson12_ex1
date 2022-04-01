@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <title>Title</title>
+    <script>
+        $(document).ready(function () {
+            $("#hide").click(function (){
+                $("p").hide();
+            });
+            $("#show").click(function (){
+                $("p").show();
+            })
+        })
+        $(document).ready(function (){
+            $("button").click(function (){
+                var div = $("div");
+                div.animate({left:'50px'},"slow");
+                div.animate({fontSize:"100px"},"slow");
+            });
+        });
+    </script>
+</head>
+<body>
+<p>Wassup bruh</p>
+
+<button id="hide">Hide</button>
+<button id="show">Show</button>
+<div style="background:#98bf21;height:100px;width:200px;position:absolute;">HELLO</div>
+
+</body>
+</html>
